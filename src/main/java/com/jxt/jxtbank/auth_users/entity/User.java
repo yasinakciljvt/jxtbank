@@ -1,5 +1,6 @@
 package com.jxt.jxtbank.auth_users.entity;
 
+import com.jxt.jxtbank.account.entity.Account;
 import com.jxt.jxtbank.role.entity.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
