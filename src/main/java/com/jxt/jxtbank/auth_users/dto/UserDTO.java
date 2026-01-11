@@ -3,10 +3,9 @@ package com.jxt.jxtbank.auth_users.dto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.jxt.jxtbank.account.dto.AccountDTO;
 import com.jxt.jxtbank.role.entity.Role;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -41,7 +40,7 @@ public class UserDTO {
 
     private List<Role> roles;
 
-
+    @JsonManagedReference
     private List<AccountDTO> accounts;
 
     private LocalDateTime createdAt;
