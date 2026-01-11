@@ -10,6 +10,7 @@ import com.jxt.jxtbank.auth_users.entity.User;
 import com.jxt.jxtbank.enums.AccountStatus;
 import com.jxt.jxtbank.enums.AccountType;
 import com.jxt.jxtbank.enums.Currency;
+import com.jxt.jxtbank.transaction.dto.TransactionDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
